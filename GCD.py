@@ -15,8 +15,5 @@ def EuclidGCD(a, b):
     return EuclidGCD(b, _a)
 
 
-def LCM(a, b):
-    m = 1
-
 
 print(EuclidGCD(357, 234))
