@@ -13,9 +13,11 @@ using namespace std;
 
 int main() {
     //A Child of 3.5 years is a point with coordinate 3.5 in a line.
+    cout<<"Enter number of points: "<<endl;
     int n;
     cin>>n;
 
+    cout<<"Enter points: "<<endl;
     int* x = new int [n];
     for(int i=0; i<n; i++){
         cin>>x[i];
@@ -23,7 +25,9 @@ int main() {
 
     //sort points (we assume sorted here).
 
-    int segments_size=2;
+    cout<<"Enter segment size (group range): "<<endl;
+    int segments_size;
+    cin>>segments_size;
     int count =1;
 
     map<int,vector<int>> segments;
@@ -45,7 +49,7 @@ int main() {
         for(int j=0; j<segments[i].size(); j++){
             cout<<segments[i][j]<<" ";
         }
-        cout<<"at segment "<<i<<"\n";
+        cout<<"at segment (group): "<<i<<"\n";
     }
 
 
