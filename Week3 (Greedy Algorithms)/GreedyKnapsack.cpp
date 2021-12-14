@@ -26,11 +26,6 @@ int main() {
         itemValPerUnit[i]= ( ((double)items[i].first) / items[i].second );
     }
 
-    for(int i=0; i<n; i++){
-        cout<<items[i].first<<" "<<items[i].second<<endl;
-        cout<<itemValPerUnit[i]<<endl;
-    }
-
     double sum=0.0;
     int currentWeight=0;
     double max=0.0;
